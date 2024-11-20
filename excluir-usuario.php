@@ -1,11 +1,10 @@
 <?php
 include 'conexao.php';
  
-// Verifica se o ID foi passado na URL
+
 if (isset($_GET['id'])) {
     $id = intval($_GET['id']);
  
-    // Comando SQL para excluir o usuário
     $sql = "DELETE FROM usuarios WHERE id = $id";
  
     if ($conn->query($sql) === TRUE) {

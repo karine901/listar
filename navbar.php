@@ -7,7 +7,7 @@ if (!isset($_SESSION['nome'])) {
  
 <nav class="navbar">
     <div class="navbar-container">
-        <span>Bem-vindo, <?php echo $_SESSION['nome']; ?></span>
+        <span>Seja Bem-vindo <?php echo $_SESSION['nome']; ?></span>
         <a href="sair.php" class="btn-sair">Sair</a>
     </div>
 </nav>
